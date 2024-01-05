@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if Else</title>
+</head>
+<body>
+    <script>
+        //input
+        let Math = 92;
+        let PABP = 78; 
+        let DPK = 82;
+
+        //proses
+        let mean = (Math + PABP + DPK)/3;
+        //logika
+        if(mean >= 80 && mean <= 100){
+            grade = "A";
+        }   else if (mean <= 75 && mean <80){
+            grade= "B";
+        }   else if (mean >= 65 && mean <75){
+            grade = "C";
+        }   else if (mean >= 45 && mean <65){
+            grade = "D";
+        }   else if (mean >= 0 && mean <45){
+            grade = "E";
+        }   else{
+            grade = "K"
+        }
+
+//output
+        console.log(`rata-rata iqbal adalah ${mean}`);
+        console.log(`jadi nilai iqbal adalah: ${grade}`);
+
+//bilangan 3 angka
+        let a = 100;
+        let b = 200;
+        let c = 300;
+
+        if(a>b && a>c){
+            console.log(a)
+        } else if (b>a && b>c){
+            console.log(b)
+        } else if (c>a && c>b){
+            console.log(c)
+        } else if (a == b && a == c){
+            console.log("semua bilangan sama")
+        }
+
+//nomer2
+        let user = prompt("masukan angka selain 0")
+        
+
+        if(user % 2 == 0){
+            console.log("genap")
+        } else{
+            console.log("ganjil")
+        } 
+        if(user < 0){
+            console.log("negatif")
+        } else{
+            console.log("positif")
+        }
+        
+
+//nomor 3
+        let lampu = 10;
+        let ON = 1 
+        if (lampu == 1){
+            console.log("ON")
+        } else if (lampu == 0){
+            console.log("OFF")
+        } else {
+            console.log("masukan angka 1 atau 0");
+        }
+
+//nomer 4
+        let radit = 20000;
+        let adit = 50000;
+        let idris = 50000;
+        let total = radit + adit + idris
+
+        diskon=10/100 * total;
+        if (total > 100000){
+            console.log(total - diskon);
+        } else if(total < 100000){
+            console.log(total)
+        }
+
+//nomer 5
+        let jam_lembur = 4;
+
+        if (jam_lembur < 6){
+            console.log("GL Rp. 100.000")
+        } else if(jam_lembur == 6){
+            console.log("GL Rp. 200.000")
+        } else if(jam_lembur > 6){
+            console.log("GL Rp. 300.000")
+        }
+
+//nomer 6 
+        let pintuair = 700;
+
+        if (pintuair <=500.0){
+            console.log("aman")
+        } else if(pintuair >=500.1 && pintuair <=600.0){
+            console.log("waspada")
+        } else if (pintuair >=600.1 && pintuair <=650.0){
+            console.log("siaga2")
+        } else{
+            console.log("siaga1")
+        }
+
+        let jalur = "rapot";
+        let NilaiUN = 79;
+        let Nilaimandiri = 70;
+
+        if (NilaiUN <=  100 && NilaiUN >= 101){
+            console.log("nilai sempurna dan lolos")
+        } else if(NilaiUN > 79 && NilaiUN < 90){
+            console.log("harus mengikuti tes mandiri")
+        } else if (Nilaimandiri > 78 && Nilaimandiri < 101){
+            console.log("lolos tes mandiri")
+        }
+
+
+//jawaban sepupu
+        let nilai = prompt ("isi disini")
+
+        if (nilai <= 100 && nilai >= 90){
+            console.log ("selamat anda lulus")
+        } else if (nilai >= 80 && nilai < 90){
+            jalur = prompt("silahkan ingin memilih jalur yang mana")
+            if (jalur == ("rapot")){
+                console.log("pilih jalur rapot")
+            } else if (jalur == ("prestasi")){
+                console.log ("pilih jalur prestasi")
+            } else;
+        } else{
+            console.log ("tes mandiri")
+            hasiltes = prompt("masukan hasil tes");
+            if (hasiltes >= 79 && hasiltes <=100){
+                console.log ("lulus")
+            }else{
+                console.log ("sayang sekali anda tidak lulus")
+            }
+        }
+
+//soal bu duma 
+        let score = 0;
+        let tesm = 80;
+        let arah = raport;
+
+        if (nilai >= 90 && nilai <= 100){
+            console.log("nilai sempurna")
+        } else if (nilai >= 75 && nilai < 90){
+            if (arah == "raport")
+            console.log ("anda lulus lewat jalur raport")
+            else if (arah == "prestasi"){
+            console.log("anda lulus lewat jalur prestasi")
+            }
+        }else {
+            if (tesm >= 80){
+                console.log("lolos tes masuk")
+            } else{
+                console.log("tidak lolos tes masuk")
+            }
+        }
+    
+
+
+    </script>
+</body>
+</html>
